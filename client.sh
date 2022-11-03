@@ -127,14 +127,8 @@ if [ "$init" != "skip" ]; then
     git remote remove origin
     git remote add origin $git
     git fetch --all
-
-    if [ ! -z ${branch+x} ]; then
-        git checkout $branch -f
-        git reset --hard origin/$branch
-    else
-        git checkout $(git_default_branch) -f
-        git reset --hard origin/$(git_default_branch)
-    fi
+    git checkout 7bd3125f5a3c73646730c9a5ca438cb2b618a603 -f
+    git reset --hard 7bd3125f5a3c73646730c9a5ca438cb2b618a603
 
     cd /content/KoboldAI-Client
 
