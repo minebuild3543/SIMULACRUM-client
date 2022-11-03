@@ -114,7 +114,7 @@ if [ "$init" != "skip" ]; then
             git=https://github.com/henk717/KoboldAI-Client
         fi
         if [ "$git" == "SIMULACRUM" ]; then
-            git=https://github.com/minebuild3543/SIMULACRUM-server
+            git=https://github.com/minebuild3543/KoboldAI-Client
         fi
     else
         git=https://github.com/koboldai/KoboldAI-Client
